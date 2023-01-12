@@ -1,0 +1,22 @@
+.login-button {
+  background-color: white;
+  color: #282c34;
+  text-align: center;
+  pointer-events: all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 30vw;
+}
+
+.button-text {
+  font-size: large;
+  pointer-events: none;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  padding-left:10px;
+}
