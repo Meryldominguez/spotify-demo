@@ -1,0 +1,37 @@
+.user-card {
+  background-color: white;
+  color: #282c34;
+  text-align: center;
+  pointer-events: all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  padding-top:30px;
+  padding-bottom:30px;
+
+}
+
+.user-card-header {
+  font-size: large;
+  pointer-events: none;
+  text-align: center;
+  width: 80%;
+}
+
+.user-card-avatar {
+  height:150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+  
+}
+.user-card-avatar > img {
+  flex-shrink: 0;
+  max-width: 100%;
+  max-height: 100%
+}

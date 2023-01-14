@@ -1,8 +1,26 @@
+import './UserCard.css';
 
-function UserCard() {
+function UserCard({userData}) {
+  const {
+    user, 
+    topArtists,
+    topTracks,
+    following,
+    currentTrack
+    } = userData
+
   return (
     <div className="user-card">
-    Hello
+      <div className="user-card-header">
+        <div className='user-card-avatar'>
+          <img src={user.images[0].url} alt={"Profile picture for "+user.display_name} />
+        </div>
+        </div>
+      <div className="user-card-body">
+        BODY
+      </div>
+      
+    
     </div>
   );
 }
