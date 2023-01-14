@@ -107,10 +107,12 @@ function App() {
         Login to your Spotify account below to see information about your account!
       </header>
       <div className="body">
-      {currentUser? 
-      <UserCard userData={currentUser}/> : <LoginButton callback={openSSOLogin}/> }
-    </div>
-      
+        {currentUser? 
+        <UserCard userData={currentUser}/> : <LoginButton callback={openSSOLogin}/> }
+      </div>
+      <div className="footer">
+        
+      </ div>
     </div>
   );
 }
