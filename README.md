@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+#Spotify Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a small demo to experiment with the [Spotify API](https://developer.spotify.com/documentation/web-api/) and their OAuth2.0 system. I first used the 'implicit grant' OAuth flow, which they outline in their documentation, I am retooling use the Authorization Code flow.
+
+This demo was made with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
