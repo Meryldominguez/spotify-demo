@@ -9,9 +9,9 @@ const mockUser ={
 }
 const mockUserData = {
   user:mockUser, 
-  topArtists:{},
-  topTracks:{},
-  following:{},
+  topArtists:{items:[{name:"favorite artist"}]},
+  topTracks:{items:[{name:"favorite song"}]},
+  following:{artists:{total:4}},
   currentTrack:{}
 }
 

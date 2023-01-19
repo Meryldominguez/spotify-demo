@@ -1,4 +1,5 @@
 import './UserCard.css';
+import { v4 as uuid } from 'uuid';
 
 function UserCard({userData}) {
   const {
@@ -8,7 +9,6 @@ function UserCard({userData}) {
     following,
     currentTrack
     } = userData
-console.log(userData)
   return (
     <div className="user-card">
       <div className="user-card-header">
@@ -32,13 +32,13 @@ console.log(userData)
           <h3>Top Artists</h3>
 
           {topArtists.items.map((artist, i)=>{
-            return <span>{artist.name}</span>
+            return <span key={uuid()}>{artist.name}</span>
           })}
         </div>
         <div className='top-tracks'>
         <h3>Top Tracks</h3>
         {topTracks.items.map((track, i)=>{
-            return <span>*{track.name}</span>
+            return <span key={uuid()}>*{track.name}</span>
           })}
         </div>
       </div>
